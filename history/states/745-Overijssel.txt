@@ -1,0 +1,27 @@
+state={
+	id=745
+	name="STATE_745"
+	resources={
+		steel=3
+	}
+
+	history={
+		owner = HOL
+		add_core_of = HOL
+		victory_points = { 6286 10 }
+		victory_points = { 9363 5 }
+		buildings = {
+			infrastructure = 6
+			arms_factory = 1
+			industrial_complex = 2
+		}
+
+	}
+
+	provinces={
+		6286 9363
+	}
+	manpower=365538
+	buildings_max_level_factor=1
+	state_category="town"
+}

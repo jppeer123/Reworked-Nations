@@ -1,0 +1,25 @@
+state={
+	id=744
+	name="STATE_744"
+
+	history={
+		owner = HOL
+		add_core_of = HOL
+		victory_points = { 9309 10 }
+		victory_points = { 9403 5 }
+		buildings = {
+			infrastructure = 5
+			arms_factory = 1
+			industrial_complex = 2
+			air_base = 3
+		}
+
+	}
+
+	provinces={
+		9309 9403 
+	}
+	manpower=222432
+	buildings_max_level_factor=1
+	state_category="town"
+}

@@ -1,0 +1,296 @@
+focus_tree = {
+	id = holland_focus
+	
+	country = {
+		factor = 0
+		
+		modifier = {
+			add = 10
+			tag = HOL
+		}
+	}
+
+	default = no
+
+    ###########################
+    ######Industrial Foci######
+    ###########################
+	focus = {
+		id = HOL_recovery
+		icon = GFX_goal_generic_construct_civ_factory
+		x = 5
+		y = 0
+		cost = 10
+		ai_will_do = {
+			factor = 12
+		}
+		
+		completion_reward = {
+		    swap_ideas = {
+				remove_idea = HOL_Great_Depression
+				add_idea = 	HOL_Great_Depression_1
+			}
+
+		}
+	}
+
+	focus = {
+		id = HOL_recovery_2
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = { focus = HOL_recovery }
+		x = 6
+		y = 1
+		cost = 10
+		ai_will_do = {
+			factor = 12
+		}
+		
+		completion_reward = {
+		    swap_ideas = {
+				remove_idea = HOL_Great_Depression_1
+				add_idea = 	HOL_Great_Depression_2
+			}
+
+		}
+	}
+
+	focus = {
+		id = HOL_recovery_3
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = { focus = HOL_recovery_2 }
+		x = 6
+		y = 2
+		cost = 10
+		ai_will_do = {
+			factor = 12
+		}
+		
+		completion_reward = {
+			remove_ideas = HOL_Great_Depression_2
+		}
+	}
+
+	focus = {
+	    id = HOL_economic_growth
+	    icon = GFX_goal_generic_construct_civ_factory
+	    prerequisite = { focus = HOL_recovery}
+	    x = 1
+	    y = 1
+	    cost = 10
+	    ai_will_do = {
+	        factor = 12
+	    }
+
+	    completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 2
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = industrial_complex
+										size > 1
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = industrial_complex
+					level = 3
+					instant_build = yes
+				}
+			}
+		}
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 2
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = industrial_complex
+										size > 1
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = industrial_complex
+					level = 3
+					instant_build = yes
+				}
+			}
+		}
+	}
+	
+	###################################
+	##########Diplomatic Foci##########
+	###################################
+	focus = {
+		id = HOL_Ministry_Foreign
+		icon = GFX_goal_generic_fortify_city
+		x = 9
+		y = 0
+		cost = 10
+		ai_will_do = {
+			factor = 12
+		}
+		
+		completion_reward = {
+		    country_event = { id = HOL.Defense_line }
+		    country_event = { id = HOL.11 }
+		}
+	}
+	
+	focus = {
+		id = HOL_Ministry_Foreign
+		icon = GFX_goal_generic_fortify_city
+		x = 9
+		y = 0
+		cost = 10
+		ai_will_do = {
+			factor = 12
+		}
+		
+		completion_reward = {
+		    political power = 100
+		}
+	}
+        focus = {
+		id = HOL_Foreign_Policy_aggresive
+		prerequisite = { focus = HOL_Ministry_Foreign }
+		icon = GFX_goal_generic_fortify_city
+		x = 8
+		y = 1
+		cost = 10
+		available = has_country_flag = Aggresive
+		ai_will_do = {
+			factor = 12
+		}
+		
+		completion_reward = {
+		    country_event = { id = HOL.Defense_line }
+		}
+	}
+	focus = {
+		id = HOL_Foreign_Policy_defensive
+		prerequisite = { focus = HOL_Ministry_Foreign }
+		icon = GFX_goal_generic_fortify_city
+		x = 8
+		y = 1
+		cost = 10
+		available = has_country_flag = Defensive
+		ai_will_do = {
+			factor = 12
+		}
+		
+		completion_reward = {
+		    country_event = { id = HOL.Defense_line }
+		}
+	}
+	focus = {
+		id = HOL_Foreign_Policy_conservative
+		prerequisite = { focus = HOL_Ministry_Foreign }
+		icon = GFX_goal_generic_fortify_city
+		x = 8
+		y = 1
+		cost = 10
+		available = has_country_flag = Conservative
+		ai_will_do = {
+			factor = 12
+		}
+		
+		completion_reward = {
+		    country_event = { id = HOL.Defense_line }
+		}
+	}
+	focus = {
+		id = HOL_Foreign_Policy_reliable
+		prerequisite = { focus = HOL_Ministry_Foreign }
+		icon = GFX_goal_generic_fortify_city
+		x = 8
+		y = 1
+		cost = 10
+		available = has_country_flag = Reliable
+		ai_will_do = {
+			factor = 12
+		}
+		
+		completion_reward = {
+		    country_event = { id = HOL.Defense_line }
+		}
+	}
+	focus = {
+		id = HOL_Foreign_Policy_trading
+		prerequisite = { focus = HOL_Ministry_Foreign }
+		icon = GFX_goal_generic_fortify_city
+		x = 8
+		y = 1
+		cost = 10
+		available = has_country_flag = Trading
+		ai_will_do = {
+			factor = 12
+		}
+		
+		completion_reward = {
+		    country_event = { id = HOL.Defense_line }
+		}
+	}
+	focus = {
+		id = HOL_Benelux_Appeasement
+		icon = GFX_goal_generic_fortify_city
+		mutually_exclusive = { focus = HOL_Benelux_Unification }
+		x = 8
+		y = 3
+		cost = 10
+		ai_will_do = {
+			factor = 0
+		}
+		
+		completion_reward = {
+		    BEL = { add_opinion_modifier =  { target = HOL modifier = HOL_Appeasement } }
+		    LUX = { add_opinion_modifier =  { target = HOL modifier = HOL_Appeasement } }
+		}
+	}
+
+	focus = {
+		id = HOL_Benelux_Unification
+		icon = GFX_goal_generic_fortify_city
+		mutually_exclusive = { focus = HOL_Benelux_Appeasement }
+		x = 10
+		y = 3
+		cost = 10
+		ai_will_do = {
+			factor = 12
+		}
+		
+		completion_reward = {
+		    country_event = { id = HOL.2 }
+		}
+	}
+}
+

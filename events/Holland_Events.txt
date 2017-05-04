@@ -1,0 +1,218 @@
+﻿add_namespace = HOL
+
+country_event = {
+	id = HOL.defense_line
+	title = HOL.defense.t
+	desc = HOL.defense.d
+	picture = GFX_report_event_worker_protests
+	
+	is_triggered_only = no
+
+	fire_only_once = yes
+
+	option = {
+		name = HOL.defense.a
+	            7 = {
+					add_building_construction = {
+						type = bunker
+						province = 391
+						level = 2
+						instant_build = yes
+					}
+				}
+				747 = {
+					add_building_construction = {
+						type = bunker
+						province = 9498
+						level = 2
+						instant_build = yes
+					}
+				}
+				35 = {
+					add_building_construction = {
+						type = bunker
+						province = 3262
+						level = 2
+						instant_build = yes
+					}
+				}
+				add_timed_idea = { idea = HOL_Defense_Lines_1 days = 350 }			
+	}
+    
+    option = {
+		name = HOL.defense.b
+		        7 = {
+					add_building_construction = {
+						type = bunker
+						province = 391
+						level = 4
+						instant_build = yes
+					}
+				}
+				747 = {
+					add_building_construction = {
+						type = bunker
+						province = 9498
+						level = 4
+						instant_build = yes
+					}
+				}			
+				35 = {
+					add_building_construction = {
+						type = bunker
+						province = 3262
+						level = 4
+						instant_build = yes
+					}
+				}
+				add_timed_idea = { idea = HOL_Defense_Lines_2 days = 350 }
+	}
+   
+    option = {
+		name = HOL.defense.c
+		        7 = {
+					add_building_construction = {
+						type = bunker
+						province = 391
+						level = 6
+						instant_build = yes
+					}
+				}
+				747 = {
+					add_building_construction = {
+						type = bunker
+						province = 9498
+						level = 6
+						instant_build = yes
+					}
+				}			
+				35 = {
+					add_building_construction = {
+						type = bunker
+						province = 3262
+						level = 6
+						instant_build = yes
+					}
+				}
+				add_timed_idea = { idea = HOL_Defense_Lines_3 days = 350 }
+	}
+}
+
+country_event = {
+	id = HOL.2
+	title = HOL.2.t
+	desc = HOL.2.d
+	picture = GFX_report_event_worker_protests
+	
+	is_triggered_only = no
+
+	fire_only_once = no
+	
+	trigger = {
+		tag = HOL
+		has_completed_focus = HOL_Benelux_Unification
+	}
+	
+	option = {
+		BEL = { country_event } = { id = HOL.3 }
+		LUX = { country_event } = { id = HOL.4 }
+
+		add_state_core = 6
+		add_state_core = 8
+		add_state_core = 34
+		add_state_core = 750
+		add_state_core = 751
+		add_state_core = 752
+		add_state_core = 753
+		add_state_core = 754
+		add_state_core = 755
+		add_state_core = 756
+		add_state_core = 757
+		add_state_core = 758
+	}
+}
+
+country_event = {
+	id = HOL.3
+	title = HOL.3.t
+	desc = HOL.3.d
+	picture = GFX_report_event_worker_protests
+	
+	is_triggered_only = no
+
+	fire_only_once = yes
+	
+	option = {
+		name = HOL.3.a
+		HOL = country_event = { id = HOL.6 }
+		}
+		
+	option = {
+	        name = HOL.3.b
+		HOL = country_event = { id = HOL.5 }
+		add_political_power = -90
+		add_state_core = 749
+		}
+		
+	option = {
+	        name = HOL.3.c
+		HOL = country_event = { id = HOL.7 }
+		}
+		
+country_event = {
+	id = HOL.4
+	title = HOL.4.t
+	desc = HOL.4.d
+	picture = GFX_report_event_worker_protests
+	
+	is_triggered_only = no
+
+	fire_only_once = yes
+	
+	option = {
+		name = HOL.4.a
+		HOL = country_event = { id = HOL.8 }
+		}
+		
+	option = {
+	        name = HOL.4.b
+		HOL = country_event = { id = HOL.9 }
+		}
+		
+
+country_event = {
+	id = HOL.11
+	title = HOL.11.t
+	desc = HOL.11.d
+	picture = GFX_report_event_worker_protests
+	
+	is_triggered_only = no
+
+	fire_only_once = yes
+	
+	option = {
+		name = HOL.11.a
+		set_country_flag  = Aggresive
+		}
+		
+	option = {
+		name = HOL.11.b
+		set_country_flag  = defensive
+		}
+		
+	option = {
+		name = HOL.11.c
+		set_country_flag  = conservative
+		}
+		
+	option = {
+		name = HOL.11.d
+		set_country_flag  = Reliable
+		}
+		
+	option = {
+		name = HOL.11.e
+		set_country_flag  = Trading
+		}
+		
+		#####You found PEPE!!!! Give yourself a pat on the back!######

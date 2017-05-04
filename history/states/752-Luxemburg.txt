@@ -1,0 +1,27 @@
+state={
+	id=752
+	name="STATE_752"
+
+	history={
+		owner = BEL
+		victory_points = {
+			9418 10 
+		}
+		buildings = {
+			infrastructure = 6
+			arms_factory = 1
+			industrial_complex = 4
+			air_base = 1
+
+		}
+		add_core_of = BEL
+
+	}
+
+	provinces={
+		9418 11407
+	}
+	manpower=221000
+	buildings_max_level_factor=1.000
+	state_category=large_city
+}

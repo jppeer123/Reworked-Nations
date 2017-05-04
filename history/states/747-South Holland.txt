@@ -1,0 +1,35 @@
+state={
+	id=747
+	name="STATE_747"
+	resources={
+		steel=8
+		oil=3
+		tungsten=4
+		chromium=2
+	}
+
+	history={
+		owner = HOL
+		add_core_of = HOL
+		victory_points = { 3211 30 }
+		victory_points = { 9498 20 }
+		buildings = {
+			infrastructure = 8
+			arms_factory = 4
+			industrial_complex = 3
+			dockyard = 3
+			air_base = 5
+			9498 = {
+				naval_base = 10
+			}
+		}
+
+	}
+
+	provinces={
+        3211 9498
+	}
+	manpower=1957600
+	buildings_max_level_factor=1
+	state_category="metropolis"
+}

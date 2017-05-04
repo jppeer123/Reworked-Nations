@@ -1,0 +1,26 @@
+state={
+	id=757
+	name="STATE_757"
+
+	history={
+		owner = BEL
+		victory_points = {
+			11419 20 
+		}
+		buildings = {
+			infrastructure = 8
+			arms_factory = 1
+			industrial_complex = 4
+			air_base = 1
+
+		}
+		add_core_of = BEL
+
+	}
+
+	provinces={
+		11419 
+	}
+	manpower=1173000
+	buildings_max_level_factor=1.000
+	state_category=metropolis

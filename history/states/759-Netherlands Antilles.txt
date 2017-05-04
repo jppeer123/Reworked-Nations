@@ -1,0 +1,26 @@
+state={
+	id=759
+	name="STATE_759"
+
+	history={
+		owner = HOL
+		add_core_of = HOL
+		buildings = {
+			infrastructure = 1
+			arms_factory = 5
+			industrial_complex = 2
+			dockyard = 0
+			air_base = 0
+		}
+
+		add_extra_state_shared_building_slots = 2
+
+	}
+
+	provinces={
+		4155 13084 
+	}
+	manpower=22704
+	buildings_max_level_factor=1.000
+	state_category=sparse_urban_region
+}

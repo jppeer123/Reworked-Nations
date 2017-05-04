@@ -1,0 +1,33 @@
+state={
+	id=754
+	name="STATE_754"
+	resources={
+		steel=8.000
+	}
+
+	history={
+		owner = BEL
+		add_core_of = BEL
+		victory_points = {
+			3516 10 
+		}
+		buildings = {
+			infrastructure = 8
+			arms_factory = 4
+			industrial_complex = 3
+			dockyard = 3
+			air_base = 5
+		}
+
+		add_extra_state_shared_building_slots = 2
+
+	}
+
+	provinces={
+		3516  
+	}
+	manpower=1952163
+	buildings_max_level_factor=1.000
+	state_category=metropolis
+}
+

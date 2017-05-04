@@ -1,0 +1,30 @@
+﻿add_namespace = HOL_News
+
+news_event = {
+	id = HOL_News.1
+	title = HOL_News.1.t
+	desc = HOL_News.1.d
+	picture = GFX_report_event_worker_protests
+	
+	is_triggered_only = no
+
+	fire_only_once = yes
+	
+	option = {
+		name = news.14.a
+		trigger = {
+			NOT = {
+				TAG = HOL
+			}
+		}
+	}
+	option = {
+		name = news.14.b
+		trigger = { TAG = HOL }
+		hidden_effect = {
+			HOL = {
+				set_cosmetic_tag = Je_Maintiendrai_UKNL
+			}
+		}
+	}
+}

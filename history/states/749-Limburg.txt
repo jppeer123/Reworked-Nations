@@ -1,0 +1,27 @@
+state={
+	id=749
+	name="STATE_749"
+	resources={
+		oil=8
+	}
+
+	history={
+		owner = HOL
+		add_core_of = HOL
+		victory_points = { 11562 10 }
+		buildings = {
+			infrastructure = 7
+			arms_factory = 2
+			industrial_complex = 4
+			air_base = 2
+		}
+
+	}
+
+	provinces={
+		11562
+	}
+	manpower=531938
+	buildings_max_level_factor=1
+	state_category="large_city"
+}
