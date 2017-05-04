@@ -192,9 +192,11 @@ focus_tree = {
 			factor=5
 		}
 		
-			completion_reward = {
+	completion_reward = {
+	 country_event = { id = HOL.Defense_line }
+		}
 
-				}
+				
 			 }
 			 
 		focus ={
@@ -495,6 +497,8 @@ focus_tree = {
 					}
 				}
 			}	
+		
+		
 		
 		}
 		
