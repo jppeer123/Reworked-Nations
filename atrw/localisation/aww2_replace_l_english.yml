@@ -1,0 +1,37 @@
+﻿l_english:
+ # Netherlands
+ HOL_fascism_party:0 "Queen"
+ HOL_fascism_party_long:0 "Queen and Government"
+ 
+ HOL_politic_focus:0 "Politic Focus"
+ HOL_all_power_to_the_queen:0 "All Power to the Queen"
+ HOL_expansions_planning:0 "Expansions planning"
+ HOL_befriend_germany:0 "befriend Germany"
+ HOL_annex_colonial_state:0 "Annex Colonies"
+ HOL_colonize_Kalimantan:0 "colonize Kalimantan"
+ HOL_industrial_help_from_germany:0 "Industrial help from Germany"
+ HOL_create_a_netherland_german_division:0 "Create a Netherland-German Division"
+ HOL_close_borders_to_belgium:0 "Close borders to Belgium"
+ HOL_go_left_focus:0 "Go for communism"
+ HOL_found_koninklijke_military_factories:0 "Found koninklijke military factories"
+ HOL_devolop_in_civilian_industry:0 "Devolop in civilian Industry"
+ HOL_use_empty_landscapes:0 "Use empty landscapes"
+ HOL_german_scienctiest:0 "German scientiest"
+ HOL_restore_the_old_kingdom:0 "Restore the old Kingdom"
+ HOL_search_for_steel:0 "Search for steel"
+ HOL_found_royal_dutch_shell:0 "Found Royal dutch Shell"
+ HOL_conquer_Benelux:0 "Conquer Benelux"
+ HOL_colonize_West_Papua:0 "colonize WestPapua"
+ HOL_unite_Benelux:0 "Unite Benelux"
+ HOL_aftermath_of_the_worldwar:0 "Aftermath of the worldwar"
+ HOL_talk_to_the_people_in_Vlaanderen:0 "Talk to the people in Vlaanderen"
+ HOL_industrie_focus:0 "Industry focus"
+ 
+
+ #Hungary
+ HUN_politic_focus:0 "Politic Focus"
+ HUN_go_right_focus:0 "go for fascism"
+ HUN_go_for_monarchie:0 "Support Monarchie"
+ HUN_talk_to_austria:0 "Talk to Austria"
+ HUN_get_our_claims:0 "Get our claims"
+ 
