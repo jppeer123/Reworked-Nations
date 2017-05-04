@@ -4,7 +4,7 @@ country_event = {
 	id = HOL.defense_line
 	title = HOL.defense.t
 	desc = HOL.defense.d
-	picture = GFX_report_event_worker_protests
+	picture = GFX_report_event_soviet_soldiers
 	
 	is_triggered_only = no
 
@@ -169,31 +169,8 @@ country_event = {
 	}
 }
 
-country_event = {
-	id = HOL.2
-	title = HOL.2.t
-	desc = HOL.2.d
-	picture = GFX_report_event_worker_protests
-	
-	is_triggered_only = no
 
-	fire_only_once = no
-	
-	trigger = {
-		tag = HOL
-		has_completed_focus = HOL_Benelux_Unification
-	}
-	
-	option = {
-		BEL = { country_event } = { id = HOL.3 }
-		LUX = { country_event } = { id = HOL.4 }
 
-		add_state_core = 6
-		add_state_core = 8
-		add_state_core = 34
-
-	}
-}
 
 		
 		
